@@ -3,10 +3,10 @@ userPassword=$1
 
 #download the packages
 cd /tmp
-wget -c https://swupdate.openvpn.org/as/openvpn-as-2.7.4-Ubuntu16.amd_64.deb
+wget -c https://swupdate.openvpn.org/as/openvpn-as-2.7.4-Ubuntu18.amd_64.deb
 
 #install the software
-sudo dpkg -i openvpn-as-2.7.4-Ubuntu16.amd_64.deb
+sudo dpkg -i openvpn-as-2.7.4-Ubuntu18.amd_64.deb
 
 #update the password for user openvpn
 sudo echo "openvpn:$userPassword"|sudo chpasswd
